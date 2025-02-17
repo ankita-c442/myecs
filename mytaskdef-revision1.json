@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:390844740759:task-definition/mytaskdef:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:980921748666:task-definition/mytaskdef:1",
     "containerDefinitions": [
         {
             "name": "mynodecont",
-            "image": "390844740759.dkr.ecr.ap-south-1.amazonaws.com/mynewrepo",
+            "image": "980921748666.dkr.ecr.us-east-1.amazonaws.com/mynewrepo",
             "cpu": 0,
             "portMappings": [
                 {
@@ -27,7 +27,7 @@
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
-                    "awslogs-region": "ap-south-1",
+                    "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
@@ -36,7 +36,7 @@
         }
     ],
     "family": "mytaskdef",
-    "executionRoleArn": "arn:aws:iam::390844740759:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::980921748666:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -84,8 +84,8 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-02-15T07:46:03.716Z",
-    "registeredBy": "arn:aws:iam::390844740759:root",
+    "registeredAt": "2025-02-17T15:14:07.302Z",
+    "registeredBy": "arn:aws:iam::980921748666:root",
     "enableFaultInjection": false,
     "tags": []
 }
